@@ -1,7 +1,9 @@
+import { Header } from "./components/header";
+
 export const App = () => (
-  <main>
-    <h2 className="bg-black text-red-500 p-4 rounded-2xl w-fit">
-      Hello World!
-    </h2>
-  </main>
+  <>
+    <Header />
+    <main className="bg-primary-color dark:bg-primary-dark-color min-h-dvh h-full">
+    </main>
+  </>
 );

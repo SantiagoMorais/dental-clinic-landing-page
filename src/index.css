@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --text-extra-small-size: 0.8rem;
+  --text-small-size: 1.2rem;
+  --text-base-size: 1.6rem;
+  --text-medium-size: 2rem;
+  --text-large-size: 2.4rem;
+  --text-extra-large-size: 4rem;
+  --text-huge-size: 6rem;
+
+  --color-primary-color: #ffffff;
+  --color-secondary-color: #42688f;
+  --color-tertiary-color: #213349;
+  --color-text-color: #0d2031;
+
+  --color-primary-dark-color: #213349;
+  --color-secondary-dark-color: #42688f;
+  --color-tertiary-dark-color: #0d2031;
+  --color-text-dark-color: #ffffff;
+
+  --font-font-family: "M PLUS Rounded 1c", serif;
+  --font-secondary-font-family: "Poiret One", serif;
+
+  --drop-shadow-white: 0 0 3px rgba(255, 255, 255, 0.3);
+  --shadow-all-around: 0 0 10px;
+}
+
+* {
+  @apply font-font-family;
+}
